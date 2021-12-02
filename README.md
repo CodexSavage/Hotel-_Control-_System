@@ -6,3 +6,5 @@ The project counts with three ".txt" and two ".cpp"  files. The txt files counts
 The proyect is optimizated in a especific terminal proportion, 80x158. In this dimension, it works perfect, but you can changed to understand how it works in a diferent enviroments
 
 it shoud be note, that the information applied in the txt files, there are not a real information, it's invented especifically to this project to improve my knowledge.
+
+Project not completed yet
