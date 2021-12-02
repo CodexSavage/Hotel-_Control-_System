@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <string>
 using namespace std;
-struct tDatos_1 //Alberto, almacena los datos de hotel
+struct tDatos_1 //Almacena los datos de hotel
 {
     int habitacion,piso;
     char orientacion;
@@ -30,7 +30,7 @@ struct tComida{
 	string comida;
 	float cost;
 };
-struct tUsuario //Alberto, almacena datos de un usuario
+struct tUsuario //Almacena datos de un usuario
 {
     string nombre;
     string apellido;
@@ -41,7 +41,7 @@ struct tUsuario //Alberto, almacena datos de un usuario
     int any_nax;
 };
 
-struct tReservados //Alberto & Kevin, almacena usuarios y datos de hotel/vehiculo/comida
+struct tReservados //Almacena usuarios y datos de hotel/vehiculo/comida
 {
     tDatos_1 reservado;//hotel
     tUsuario registrado;//datos usuario
@@ -60,14 +60,14 @@ struct tReservados //Alberto & Kevin, almacena usuarios y datos de hotel/vehicul
     		int ch;
     		while((ch = fgetc(stdin)) != EOF && ch != '\n' ){}
 	}
-	void leer_ficheroH (vector<tDatos_1>& fichero){ //Alberto, lee fichero de habitaciones
+	void leer_ficheroH (vector<tDatos_1>& fichero){ //Lee fichero de habitaciones
     	ifstream fin("Fichero.txt");
     	tDatos_1 s;
     		while(fin>>s.habitacion>>s.piso>>s.orientacion>>s.precio>>s.tipo>>s.sede>>s.disponibilidad){
      			 fichero.push_back(s);
    			 }
 	}
-	void leer_archivo(vector<tVehiculo>& S){//Kevin,leer fichero coches
+	void leer_archivo(vector<tVehiculo>& S){//Leer fichero coches
 		char texto[200];
 		tVehiculo C;
 		ifstream fin("coches_final01.txt");
@@ -511,7 +511,7 @@ void menu_principal(vector<tVehiculo>& S,vector<tDatos_1>& f,vector<tComida>& C,
 				}
 		}
 	}
-bool corroborar_email(string ca_email)//Alberto, corrobora la extension del email para saber si es correcto
+bool corroborar_email(string ca_email)//Corrobora la extension del email para saber si es correcto
 {
     bool es_correcto=true;
     for(int ca_e=0; ca_e<ca_email.size();ca_e++)
@@ -526,7 +526,7 @@ bool corroborar_email(string ca_email)//Alberto, corrobora la extension del emai
     return es_correcto;
 }
 
-bool corroborar_edad(int ca_dia, int ca_mes, int ca_any)//Alberto, corrobora si eres mayor de edad, pero no de manera exhaustiva
+bool corroborar_edad(int ca_dia, int ca_mes, int ca_any)//Corrobora si eres mayor de edad, pero no de manera exhaustiva
 {
     bool es_correcto2=false;
     int actual_dia=8,actual_mes=1,actual_any=2020; //dia fictidio actual (entrega del proyecto)
