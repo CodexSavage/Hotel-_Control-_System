@@ -1,0 +1,6 @@
+Servicio_comida Precio(€)
+Desayuno 5.5
+Comida 10.5
+Cena 15.0
+Menu_Medio 17.0
+Menu_Completo 20.5
