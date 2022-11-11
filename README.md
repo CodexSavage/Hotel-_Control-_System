@@ -1,4 +1,4 @@
-# Hotel_Control_System 
+# Hotel control management system 
 Hotel's Control System for hospitality sector. Program developed in C++ lenguage as a university personal projects
 
 The project counts with three ".txt" and two ".cpp"  files. The txt files counts with the necessary information to analize and search an especific value information to our customers or guest. In the program we wil can observe a different kind of instructions about searching and corroboration.
